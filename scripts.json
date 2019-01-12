@@ -1,0 +1,5 @@
+{
+    "watch": "nodemon -e ts --exec \"<command>\"",
+    "lint": "npx tslint -p tsconfig.json",
+    "lint:fix": "npx tslint --fix -p tsconfig.json"
+}
