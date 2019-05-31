@@ -1,0 +1,50 @@
+{
+    "workbench.colorTheme": "stayfresh-highcontrast",
+    "terminal.integrated.fontFamily": "'Courier New', monospace",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+    "editor.fontSize": 12,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": false,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.d.ts": {
+            "when": "$(basename).ts"
+        },
+        "**/*.map": {
+            "when": "$(basename)",
+        },
+        "**/archive": false,
+        "**/build": false,
+        "**/deploy": false,
+        "**/bin": false,
+        "**/node_modules": false,
+        "**/.vscode": true,
+        "**/package-lock.json": false,
+        "**/npm-debug.log": true
+    },
+    "sortImports.onSave": false,
+    "window.zoomLevel": 0,
+    "workbench.sideBar.location": "left",
+    "editor.tabSize": 4,
+    "editor.codeLens": false,
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDragAndDrop": false,
+    "material-icon-theme.showUpdateMessage": false,
+    "explorer.confirmDelete": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": true,
+    "liveshare.featureSet": "insiders",
+    "workbench.iconTheme": "vscode-icons"
+}
