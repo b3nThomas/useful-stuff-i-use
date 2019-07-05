@@ -79,13 +79,13 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Aliases
 alias ghist="git log --pretty=format:\"%h %ad | %s%d %an\" --graph --date=short"
 alias nmi="rm -rf node_modules && npm i"
+
+# https://unix.stackexchange.com/questions/31947/how-to-add-a-newline-to-the-end-of-a-file
+alias addnewlines="git ls-files -z | while IFS= read -rd '' f; do tail -c1 < "$f" | read -r _ || echo >> "$f"; done"
 
 # NPM
 export NPM_TOKEN="########"
