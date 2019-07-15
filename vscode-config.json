@@ -9,7 +9,6 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
-        "**/.DS_Store": false,
         "**/*.js": {
             "when": "$(basename).ts"
         },
@@ -19,13 +18,7 @@
         "**/*.map": {
             "when": "$(basename)"
         },
-        "**/archive": false,
-        "**/build": false,
-        "**/deploy": false,
-        "**/bin": false,
-        "**/node_modules": false,
         "**/.vscode": true,
-        "**/package-lock.json": false,
         "**/npm-debug.log": true
     },
     "sortImports.onSave": false,
@@ -43,6 +36,7 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
     "editor.minimap.enabled": false,
     "workbench.activityBar.visible": true,
     "liveshare.featureSet": "insiders",
