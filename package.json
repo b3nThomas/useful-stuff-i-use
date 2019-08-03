@@ -4,7 +4,7 @@
         "lint": "npx tslint -p tsconfig.json",
         "lint:fix": "npx tslint --fix -p tsconfig.json",
         "test": "npm run build && npx ava",
-        "transpile": "npx tsc -p .",
+        "transpile": "tsc -p .",
         "watch": "nodemon -e ts --exec \"<command>\"",
         "webpack": "npx webpack --config webpack.config.js"
     },
