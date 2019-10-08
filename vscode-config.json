@@ -9,6 +9,7 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
+        "**/.DS_Store": false,
         "**/*.js": {
             "when": "$(basename).ts"
         },
@@ -16,9 +17,15 @@
             "when": "$(basename).ts"
         },
         "**/*.map": {
-            "when": "$(basename)"
+            "when": "$(basename)",
         },
+        "**/archive": false,
+        "**/build": false,
+        "**/deploy": false,
+        "**/bin": false,
+        "**/node_modules": false,
         "**/.vscode": true,
+        "**/package-lock.json": false,
         "**/npm-debug.log": true
     },
     "sortImports.onSave": false,
@@ -40,5 +47,7 @@
     "editor.minimap.enabled": false,
     "workbench.activityBar.visible": true,
     "liveshare.featureSet": "insiders",
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "breadcrumbs.enabled": false,
+    "files.autoSaveDelay": 1500
 }
