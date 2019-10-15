@@ -83,6 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias ghist="git log --pretty=format:\"%h %ad | %s%d %an\" --graph --date=short"
 alias nmi="rm -rf node_modules && npm i"
+alias vs="code ."
 
 # https://unix.stackexchange.com/questions/31947/how-to-add-a-newline-to-the-end-of-a-file
 alias addnewlines="git ls-files -z | while IFS= read -rd '' f; do tail -c1 < "$f" | read -r _ || echo >> "$f"; done"
