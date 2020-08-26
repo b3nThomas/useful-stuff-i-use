@@ -80,13 +80,22 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-# Aliases
+# GIT aliases
 alias ghist="git log --pretty=format:\"%h %ad | %s%d %an\" --graph --date=short"
+alias gu="gcd && gl && gco - && gcm && gl && gco -"
+alias gmm="gcd && gl && gcm && gl && git merge origin/develop && gp"
+alias gs="git stash"
+alias gsp="git stash pop"
+
+# NPM aliases
 alias nmi="rm -rf node_modules && npm i"
+alias nmu="npx npm-check --update"
+
+# VSCODE aliases
 alias vs="code ."
 
-# https://unix.stackexchange.com/questions/31947/how-to-add-a-newline-to-the-end-of-a-file
-alias addnewlines="git ls-files -z | while IFS= read -rd '' f; do tail -c1 < "$f" | read -r _ || echo >> "$f"; done"
+# BASH aliases
+alias ports="lsof -P -iTCP -sTCP:LISTEN"
 
 # NPM
 export NPM_TOKEN="########"
