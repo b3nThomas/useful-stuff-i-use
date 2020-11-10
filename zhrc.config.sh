@@ -87,6 +87,12 @@ alias gmm="gcd && gl && gcm && gl && git merge origin/develop && gp"
 alias gs="git stash"
 alias gsp="git stash pop"
 
+function gdtag() {
+  TAG_NAME=$1
+  git tag --delete $TAG_NAME
+  git push --delete origin $TAG_NAME
+}
+
 # NPM aliases
 alias nmi="rm -rf node_modules && npm i"
 alias nmu="npx npm-check --update"
