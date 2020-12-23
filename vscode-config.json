@@ -17,7 +17,7 @@
             "when": "$(basename).ts"
         },
         "**/*.map": {
-            "when": "$(basename)",
+            "when": "$(basename)"
         },
         "**/archive": false,
         "**/build": false,

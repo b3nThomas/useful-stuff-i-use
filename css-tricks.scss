@@ -1,20 +1,20 @@
 // Aspect ratio trick
 
 .img {
-  position: relative;
-  width: 20%;
-  overflow: hidden;
-  
-  &::after {
-    content: '';
-    display: block;
-    padding-top: 50%;
-  }
-  
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
+    position: relative;
+    width: 20%;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        display: block;
+        padding-top: 50%;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 }
