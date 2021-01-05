@@ -82,6 +82,7 @@ source $ZSH/oh-my-zsh.sh
 
 # GIT aliases
 alias ghist="git log --pretty=format:\"%h %ad | %s%d %an\" --graph --date=short"
+alias gcm="git checkout main || true && git checkout master || true"
 alias gu="gcd && gl && gco - && gcm && gl && gco -"
 alias gmm="gcd && gl && gcm && gl && git merge origin/develop && gp"
 alias gs="git stash"
