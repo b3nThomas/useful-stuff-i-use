@@ -82,11 +82,15 @@ source $ZSH/oh-my-zsh.sh
 
 # GIT aliases
 alias ghist="git log --pretty=format:\"%h %ad | %s%d %an\" --graph --date=short"
-alias gcm="git checkout main || true && git checkout master || true"
-alias gu="gcd && gl && gco - && gcm && gl && gco -"
+alias gcm="git checkout master || true && git checkout main || true"
+alias gu="git fetch --prune && gcd && gl && gco - && gcm && gl && gco - && npm i"
 alias gmm="gcd && gl && gcm && gl && git merge origin/develop && gp"
 alias gs="git stash"
 alias gsp="git stash pop"
+alias gsync="gcd && git fetch legacy_origin && gp -f && gco - && git rebase -i"
+alias gappend="git commit --amend --no-edit"
+alias gupdate="gcm && gl && gco - && git merge origin/develop"
+alias gdone="gcm && gl && git fetch --prune"
 
 function gdtag() {
   TAG_NAME=$1
